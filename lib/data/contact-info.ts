@@ -28,9 +28,9 @@ export const contactInfo: ContactInfo = {
     zip: "16501",
   },
   socialLinks: {
-    linkedin: "https://linkedin.com/company/stayx",
-    twitter: "https://twitter.com/stayx",
-    github: "https://github.com/stayx",
+    // linkedin: "https://linkedin.com/company/stayx",
+    // twitter: "https://twitter.com/stayx",
+    // github: "https://github.com/stayx",
   },
 }
 

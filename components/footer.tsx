@@ -135,7 +135,7 @@ export function Footer() {
         </div>
 
         <div className="mx-auto mt-12 flex max-w-6xl flex-col items-center justify-between gap-4 border-t border-border pt-8 md:flex-row">
-          <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} StayX. All rights reserved.</p>
+          <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} StayX.Inc. All rights reserved.</p>
           <div className="flex gap-4">
             {socialLinks.twitter && (
               <Link
