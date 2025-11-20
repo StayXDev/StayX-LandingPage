@@ -50,7 +50,7 @@ function Section1Problem() {
   ]
 
   return (
-    <section ref={ref} className="relative min-h-screen bg-background py-20">
+    <section ref={ref} className="relative bg-background py-12 sm:py-16 lg:py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -58,18 +58,18 @@ function Section1Problem() {
           transition={{ duration: 0.6 }}
           className="mx-auto max-w-3xl text-center"
         >
-          <h2 className="font-display text-5xl font-bold text-balance">The Problem</h2>
-          <p className="mt-6 text-xl text-muted-foreground">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-balance">The Problem</h2>
+          <p className="mt-4 sm:mt-6 text-lg sm:text-xl text-muted-foreground">
             Running multiple franchise locations is chaos without intelligent systems
           </p>
         </motion.div>
 
-        <div className="relative mx-auto mt-16 max-w-4xl">
+        <div className="relative mx-auto mt-8 sm:mt-12 lg:mt-16 max-w-4xl">
           <motion.div
             initial={{ scale: 0.9, opacity: 0 }}
             animate={isInView ? { scale: 1, opacity: 1 } : { scale: 0.9, opacity: 0 }}
             transition={{ duration: 0.8 }}
-            className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
+            className="grid gap-3 sm:gap-4 sm:grid-cols-2 lg:grid-cols-3"
           >
             {problems.map((problem, i) => (
               <motion.div
@@ -77,7 +77,7 @@ function Section1Problem() {
                 initial={{ x: -50, opacity: 0 }}
                 animate={isInView ? { x: 0, opacity: 1 } : { x: -50, opacity: 0 }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="rounded-lg border border-red-500/50 bg-red-500/10 p-4 text-center font-medium text-red-400"
+                className="rounded-lg border border-red-500/50 bg-red-500/10 p-3 sm:p-4 text-center text-sm sm:text-base font-medium text-red-400"
               >
                 {problem}
               </motion.div>
@@ -88,10 +88,10 @@ function Section1Problem() {
             initial={{ scale: 0 }}
             animate={isInView ? { scale: 1 } : { scale: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
-            className="mt-12 rounded-2xl border-2 border-red-500 bg-red-500/10 p-8 text-center"
+            className="mt-8 sm:mt-12 rounded-2xl border-2 border-red-500 bg-red-500/10 p-6 sm:p-8 text-center"
           >
-            <div className="font-display text-6xl font-bold text-red-400">$50K-$200K</div>
-            <div className="mt-2 text-xl text-red-300">Lost annually per franchise owner</div>
+            <div className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-red-400">$50K-$200K</div>
+            <div className="mt-2 text-base sm:text-lg lg:text-xl text-red-300">Lost annually per franchise owner</div>
           </motion.div>
         </div>
       </div>
@@ -104,7 +104,7 @@ function Section2MeetAgents() {
   const isInView = useInView(ref, { once: false, amount: 0.5 })
 
   return (
-    <section ref={ref} className="relative min-h-screen bg-muted/30 py-20">
+    <section ref={ref} className="relative bg-muted/30 py-12 sm:py-16 lg:py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -112,13 +112,13 @@ function Section2MeetAgents() {
           transition={{ duration: 0.6 }}
           className="mx-auto max-w-3xl text-center"
         >
-          <h2 className="font-display text-5xl font-bold text-balance">Meet Your AI Agents</h2>
-          <p className="mt-6 text-xl text-muted-foreground">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-balance">Meet Your AI Agents</h2>
+          <p className="mt-4 sm:mt-6 text-lg sm:text-xl text-muted-foreground">
             Six specialized agents working together to optimize every aspect of your operations
           </p>
         </motion.div>
 
-        <div className="relative mx-auto mt-16 max-w-5xl">
+        <div className="relative mx-auto mt-8 sm:mt-12 lg:mt-16 max-w-5xl">
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {agents.map((agent, i) => (
               <motion.div
@@ -161,7 +161,7 @@ function Section3DataFlowing() {
   const isInView = useInView(ref, { once: false, amount: 0.5 })
 
   return (
-    <section ref={ref} className="relative min-h-screen bg-background py-20">
+    <section ref={ref} className="relative bg-background py-12 sm:py-16 lg:py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -169,13 +169,13 @@ function Section3DataFlowing() {
           transition={{ duration: 0.6 }}
           className="mx-auto max-w-3xl text-center"
         >
-          <h2 className="font-display text-5xl font-bold text-balance">Data Streams In</h2>
-          <p className="mt-6 text-xl text-muted-foreground">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-balance">Data Streams In</h2>
+          <p className="mt-4 sm:mt-6 text-lg sm:text-xl text-muted-foreground">
             Real-time data from all your operational systems flows into the agents
           </p>
         </motion.div>
 
-        <div className="relative mx-auto mt-16 max-w-4xl">
+        <div className="relative mx-auto mt-8 sm:mt-12 lg:mt-16 max-w-4xl">
           <div className="flex flex-col gap-8">
             {dataStreams.map((stream, i) => (
               <motion.div
@@ -236,7 +236,7 @@ function Section4AgentsAnalyzing() {
   ]
 
   return (
-    <section ref={ref} className="relative min-h-screen bg-muted/30 py-20">
+    <section ref={ref} className="relative bg-muted/30 py-12 sm:py-16 lg:py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -244,13 +244,13 @@ function Section4AgentsAnalyzing() {
           transition={{ duration: 0.6 }}
           className="mx-auto max-w-3xl text-center"
         >
-          <h2 className="font-display text-5xl font-bold text-balance">Agents Analyzing</h2>
-          <p className="mt-6 text-xl text-muted-foreground">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-balance">Agents Analyzing</h2>
+          <p className="mt-4 sm:mt-6 text-lg sm:text-xl text-muted-foreground">
             Each agent processes data with AI to find actionable insights
           </p>
         </motion.div>
 
-        <div className="relative mx-auto mt-16 max-w-5xl">
+        <div className="relative mx-auto mt-8 sm:mt-12 lg:mt-16 max-w-5xl">
           <div className="grid gap-4 sm:grid-cols-2">
             {analyses.map((item, i) => (
               <motion.div
@@ -310,7 +310,7 @@ function Section5Collaboration() {
   ]
 
   return (
-    <section ref={ref} className="relative min-h-screen bg-background py-20">
+    <section ref={ref} className="relative bg-background py-12 sm:py-16 lg:py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -318,13 +318,13 @@ function Section5Collaboration() {
           transition={{ duration: 0.6 }}
           className="mx-auto max-w-3xl text-center"
         >
-          <h2 className="font-display text-5xl font-bold text-balance">Agents Collaborate</h2>
-          <p className="mt-6 text-xl text-muted-foreground">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-balance">Agents Collaborate</h2>
+          <p className="mt-4 sm:mt-6 text-lg sm:text-xl text-muted-foreground">
             Agents communicate with each other to validate insights and reach consensus
           </p>
         </motion.div>
 
-        <div className="relative mx-auto mt-16 max-w-4xl">
+        <div className="relative mx-auto mt-8 sm:mt-12 lg:mt-16 max-w-4xl">
           <div className="space-y-4">
             {conversations.map((conv, i) => (
               <motion.div
@@ -368,7 +368,7 @@ function Section6Recommendation() {
   const [approved, setApproved] = useState(false)
 
   return (
-    <section ref={ref} className="relative min-h-screen bg-muted/30 py-20">
+    <section ref={ref} className="relative bg-muted/30 py-12 sm:py-16 lg:py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -376,13 +376,13 @@ function Section6Recommendation() {
           transition={{ duration: 0.6 }}
           className="mx-auto max-w-3xl text-center"
         >
-          <h2 className="font-display text-5xl font-bold text-balance">Smart Recommendation</h2>
-          <p className="mt-6 text-xl text-muted-foreground">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-balance">Smart Recommendation</h2>
+          <p className="mt-4 sm:mt-6 text-lg sm:text-xl text-muted-foreground">
             Agents present a validated, high-confidence recommendation
           </p>
         </motion.div>
 
-        <div className="relative mx-auto mt-16 max-w-2xl">
+        <div className="relative mx-auto mt-8 sm:mt-12 lg:mt-16 max-w-2xl">
           <motion.div
             initial={{ scale: 0, rotate: -5 }}
             animate={isInView ? { scale: 1, rotate: 0 } : { scale: 0, rotate: -5 }}
@@ -480,7 +480,7 @@ function Section7Results() {
   ]
 
   return (
-    <section ref={ref} className="relative min-h-screen bg-background py-20">
+    <section ref={ref} className="relative bg-background py-12 sm:py-16 lg:py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -488,13 +488,13 @@ function Section7Results() {
           transition={{ duration: 0.6 }}
           className="mx-auto max-w-3xl text-center"
         >
-          <h2 className="font-display text-5xl font-bold text-balance">Real-Time Results</h2>
-          <p className="mt-6 text-xl text-muted-foreground">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-balance">Real-Time Results</h2>
+          <p className="mt-4 sm:mt-6 text-lg sm:text-xl text-muted-foreground">
             Dashboard updates immediately as the recommendation is executed
           </p>
         </motion.div>
 
-        <div className="relative mx-auto mt-16 max-w-4xl">
+        <div className="relative mx-auto mt-8 sm:mt-12 lg:mt-16 max-w-4xl">
           <div className="grid gap-6 sm:grid-cols-2">
             {metrics.map((metric, i) => (
               <motion.div
@@ -541,7 +541,7 @@ function Section8Learning() {
   const isInView = useInView(ref, { once: false, amount: 0.5 })
 
   return (
-    <section ref={ref} className="relative min-h-screen bg-muted/30 py-20">
+    <section ref={ref} className="relative bg-muted/30 py-12 sm:py-16 lg:py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -549,13 +549,13 @@ function Section8Learning() {
           transition={{ duration: 0.6 }}
           className="mx-auto max-w-3xl text-center"
         >
-          <h2 className="font-display text-5xl font-bold text-balance">Continuous Learning</h2>
-          <p className="mt-6 text-xl text-muted-foreground">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-balance">Continuous Learning</h2>
+          <p className="mt-4 sm:mt-6 text-lg sm:text-xl text-muted-foreground">
             Agents learn from outcomes and replicate success across your entire network
           </p>
         </motion.div>
 
-        <div className="relative mx-auto mt-16 max-w-4xl">
+        <div className="relative mx-auto mt-8 sm:mt-12 lg:mt-16 max-w-4xl">
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
             animate={isInView ? { scale: 1, opacity: 1 } : { scale: 0.8, opacity: 0 }}
@@ -607,7 +607,7 @@ function Section9Finale() {
   const isInView = useInView(ref, { once: false, amount: 0.5 })
 
   return (
-    <section ref={ref} className="relative min-h-screen bg-gradient-to-b from-background to-primary/10 py-20">
+    <section ref={ref} className="relative bg-gradient-to-b from-background to-primary/10 py-12 sm:py-16 lg:py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
@@ -615,12 +615,12 @@ function Section9Finale() {
           transition={{ duration: 0.8 }}
           className="mx-auto max-w-4xl text-center"
         >
-          <h2 className="font-display text-6xl font-bold text-balance">Perfect Sync</h2>
-          <p className="mt-6 text-2xl text-muted-foreground">
+          <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-balance">Perfect Sync</h2>
+          <p className="mt-4 sm:mt-6 text-xl sm:text-2xl text-muted-foreground">
             All 6 agents working together, optimizing your entire franchise network 24/7
           </p>
 
-          <div className="relative mx-auto mt-16 max-w-3xl">
+          <div className="relative mx-auto mt-8 sm:mt-12 lg:mt-16 max-w-3xl">
             <div className="grid grid-cols-3 gap-4">
               {agents.map((agent, i) => (
                 <motion.div
