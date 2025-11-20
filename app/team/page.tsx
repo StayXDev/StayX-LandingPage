@@ -52,7 +52,7 @@ export default function TeamPage() {
                   <div className="p-6">
                     <h3 className="font-display text-xl font-bold">{member.name}</h3>
                     <p className="mt-1 text-sm font-medium text-primary">{member.title}</p>
-                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{member.bio}</p>
+                    <p className="mt-3 text-sm leading-relaxed text-justify text-muted-foreground">{member.bio}</p>
                     <div className="mt-4 flex gap-3">
                       <Link
                         href={member.linkedin}
